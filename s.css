@@ -1,0 +1,51 @@
+body {
+    background: url("img/banner 2.png") center / cover fixed no-repeat;
+    background-position-x: -30vw;
+}
+
+.blur {
+    border: 3px solid black;
+    text-align: left;
+    background-color: #ffffff15;
+    border-radius: 7px;
+    width: 85vw;
+    height: 85vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: -2;
+}
+
+.wm {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:url("img/wm.png") center/ cover fixed no-repeat;
+    background-position-x: -30vw;
+
+    z-index: -1;
+}
+
+.main {
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: #ffffff15;
+    text-align: left;
+    border-radius: 18px;
+    width: 85vw;
+    height: 85vh;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    z-index: 0;
+}
