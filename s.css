@@ -49,3 +49,40 @@ body {
     
     z-index: 0;
 }
+
+.split1 {
+    border-width: 3px;
+    border-style: dotted;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    position:absolute;
+    top: 5%;
+    left: 50%;
+    width: 99%;
+    height: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.dscbtn {
+    background: url(img/button.png) center / cover fixed no-repeat; 
+    height: 80%;
+    aspect-ratio: 12 / 5;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity:85%;
+}
+
+.dscbtn:hover {
+    background: url(img/button.png) center / cover fixed no-repeat; 
+    height: 80%;
+    aspect-ratio: 12 / 5;
+    background-color:#ffaaaaaa;
+    position:absolute;
+    top: 50%;
+    opacity: 100%;
+    transform: translateY(-50%);
+}
