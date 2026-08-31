@@ -1,6 +1,24 @@
-body {
-    background: url("img/banner 2.png") center / cover fixed no-repeat;
+:root {
+    ---name-size: calc(66px * var(--scale));
+    ---body-size: calc(28px * var(--scale));
+    ---tiny-size: calc(22px * var(--scale));
+    ---uwu-size: calc(15px * var(--scale))
+}
+
+.bg {
+    position: fixed;
+    z-index: -6;
+    aspect-ratio: 17 / 9;
+    width: max(100vw, calc(100vh * 17 / 9));
+    height: max(100vh, calc(100vw * 9 / 17));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("img/banner 2.png") center / cover no-repeat;
     background-position-x: -30vw;
+}
+
+body {
     background-color: #000000;
 }
 
@@ -10,7 +28,8 @@ body {
     background-color: #ffffff15;
     border-radius: 7px;
     width: 85vw;
-    height: 85vh;
+    height: auto;
+    aspect-ratio: 17/9;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position:absolute;
@@ -22,16 +41,15 @@ body {
 }
 
 .wm {
-    position:absolute;
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    width: max(100vw, calc(100vh * 17 / 9));
+    aspect-ratio: 17 / 9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background:url("img/wm.png") center/ cover fixed no-repeat;
+    background: url("img/wm.png") center / cover no-repeat;
     background-position-x: -30vw;
-
-    z-index: -1;
 }
 
 .main {
@@ -42,7 +60,8 @@ body {
     text-align: left;
     border-radius: 18px;
     width: 85vw;
-    height: 85vh;
+    height: auto;
+    aspect-ratio: 17/9;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -83,7 +102,7 @@ body {
     background-color: #ffffff15;
     z-index: 2;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 22px;
+    font-size: var(--body-size);
     color: #ffffff;
 }
 
@@ -99,7 +118,7 @@ body {
 
 .name {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 66px;
+    font-size: var(---name-size);
     color: #ffffff;
     left: 25%;
     top: 2%;
@@ -109,22 +128,14 @@ body {
 
 .splitmain tn {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 22px;
+    font-size: var(---body-size);
     color: #ffffff;
 }
 
 .splitmain tiny {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 15px;
+    font-size: var(---tiny-size);
     color: #ffffff;
-}
-.warn {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 66px;
-    color: #ffffff;
-    left: 1%;
-    top: -10%;
-    position: absolute;
 }
 
 .desc1 {
@@ -140,7 +151,7 @@ body {
     height: 28%;
     top: 17%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 15px;
+    font-size: var(---tiny-size);
     color: #ffffff;
 }
 
@@ -149,7 +160,7 @@ body {
 }
 
 .desc1 smaller {
-    font-size: 13px;
+    font-size: var(---uwu-size);
 }
 
 .desc1 a {
