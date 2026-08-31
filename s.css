@@ -1,6 +1,7 @@
 body {
     background: url("img/banner 2.png") center / cover fixed no-repeat;
     background-position-x: -30vw;
+    background-color: #000000;
 }
 
 .blur {
@@ -59,11 +60,100 @@ body {
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     position:absolute;
-    top: 5%;
+    top: 3%;
     left: 50%;
     width: 99%;
-    height: 20%;
-    transform: translate(-50%, -20%);
+    height: 15%;
+    transform: translate(-50%, -15%);
+    z-index: 1;
+}
+.splitmain {
+    border-width: 3px;
+    border-style: none;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-radius: 18px;
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    width: 99%;
+    height: 80%;
+    transform: translate(-50%, -15%);
+    background-color: #ffffff15;
+    z-index: 2;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.namimage {
+    top: 1%;
+    left: 80%;
+    height: 50%;
+    aspect-ratio: 64/45;
+    position: absolute;
+    transform: translateX(-50%);
+    background: url("img/name.png") center / cover fixed no-repeat;
+}
+
+.name {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 66px;
+    color: #ffffff;
+    left: 25%;
+    top: 2%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.splitmain tn {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.splitmain tiny {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15px;
+    color: #ffffff;
+}
+.warn {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 66px;
+    color: #ffffff;
+    left: 1%;
+    top: -10%;
+    position: absolute;
+}
+
+.desc1 {
+    border-width: 3px; 
+    border-color: #ffffff6a;
+    border-style: dotted;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    position:absolute;
+    width: 63%;
+    left: 1%;
+    height: 28%;
+    top: 17%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.desc1 p {
+    margin: 0;
+}
+
+.desc1 smaller {
+    font-size: 13px;
+}
+
+.desc1 a {
+    color: #aaaaff;
 }
 
 .dscbtn {
