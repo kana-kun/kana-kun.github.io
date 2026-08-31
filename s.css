@@ -1,5 +1,5 @@
 :root {
-    ---name-size: calc(66px * var(--scale));
+    ---name-size: calc(90px * var(--scale));
     ---body-size: calc(28px * var(--scale));
     ---tiny-size: calc(22px * var(--scale));
     ---uwu-size: calc(15px * var(--scale))
