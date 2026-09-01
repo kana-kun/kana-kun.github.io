@@ -2,7 +2,8 @@
     ---name-size: calc(90px * var(--scale));
     ---body-size: calc(28px * var(--scale));
     ---tiny-size: calc(22px * var(--scale));
-    ---uwu-size: calc(15px * var(--scale))
+    ---uwu-size: calc(15px * var(--scale));
+    ---ehr-size: calc(18px * var(--scale));
 }
 
 .bg {
@@ -155,12 +156,35 @@ body {
     color: #ffffff;
 }
 
+.schedule {
+    border-width: 3px; 
+    border-color: #ffffff6a;
+    border-style: dotted;
+    border-top-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-radius: 15px;
+    position:absolute;
+    width: 32%;
+    left: 65%;
+    height: 43%;
+    top: 53%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: var(---tiny-size);
+    color: #ffffff;
+}
+
+.schedule p {
+    margin: 0.61%;
+    margin-left: 1.3%;
+}
+
 .desc1 p {
     margin: 0;
 }
 
 .desc1 smaller {
-    font-size: var(---uwu-size);
+    font-size: var(---ehr-size);
 }
 
 .desc1 a {
